@@ -1,0 +1,40 @@
+{
+  "name": "react-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "punycode": "^2.3.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.25.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.8.0",
+    "@testing-library/jest-dom": "^6.4.8",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^9.8.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.35.0",
+    "globals": "^15.8.0",
+    "jsdom": "^24.1.1",
+    "postcss": "^8.4.39",
+    "prettier": "3.3.3",
+    "tailwindcss": "^3.4.6",
+    "typescript": "^5.5.4",
+    "vite": "^5.3.4",
+    "vitest": "^2.0.4"
+  }
+}
