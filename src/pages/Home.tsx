@@ -1,13 +1,8 @@
-import { Link } from 'react-router-dom'
 
-
-function App() {
+export default function Home() {
   return (
-    <>
-      <h1>Hello React</h1>
-      <Link to="/shop">Shop</Link>
-    </>
+    <div>
+      <h1>Home</h1>
+    </div>
   )
 }
-
-export default App
