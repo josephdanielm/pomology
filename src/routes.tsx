@@ -1,6 +1,6 @@
 import App from "./App";
-import ErrorPage from "./ErrorPage";
-import Shop from "./Shop";
+import ErrorPage from "./pages/ErrorPage";
+import Shop from "./pages/Shop";
 
 const routes = [
     {
