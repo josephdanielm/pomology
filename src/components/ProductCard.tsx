@@ -1,5 +1,4 @@
 import coconut from '../assets/fruits/coconut.png'
-import shopBag from '../assets/shopping-bag.svg'
 
 export default function ProductCard() {
   return (
@@ -11,7 +10,7 @@ export default function ProductCard() {
           <p className='text-xl font-bold'>3</p>
         </div>
       </div>
-      <div className=' group-hover:bg-zinc-500/80 transition-all duration-300 absolute inset-0 bottom-0 flex items-center justify-center text-xl bg-gray-600/0 font-semibold rounded-xl'>
+      <div className=' group-hover:bg-zinc-500/90 transition-all duration-300 absolute inset-0 bottom-0 flex items-center justify-center text-xl bg-gray-600/0 font-semibold rounded-xl'>
         <button className='w-fit z-10'>
           <svg
             className='hover:scale-125 active:scale-110 transition-all duration-200 ease-in-out fill-zinc-100/0 group-hover:fill-zinc-100/100'

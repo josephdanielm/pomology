@@ -1,4 +1,4 @@
-# Tech Stack
+# Pomology
 
 A Mock-Ecommerce site designed to practice and improve proficiency in the following skills:
 
