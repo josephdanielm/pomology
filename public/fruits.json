@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Peach",
+    "price": 1.5,
+    "description": "A sweet and juicy stone fruit with a velvety skin.",
+    "categories": {
+      "family": "Rose Family",
+      "color": "Orange"
+    },
+    "quantity_in_stock": 100
+  },
+  {
+    "name": "Lime",
+    "price": 1.0,
+    "description": "A small, green citrus fruit with a tart flavor.",
+    "categories": {
+      "family": "Citrus Family",
+      "color": "Green"
+    },
+    "quantity_in_stock": 150
+  },
+  {
+    "name": "Pineapple",
+    "price": 3.0,
+    "description": "A tropical fruit with a tough, spiky exterior and sweet, tangy flesh.",
+    "categories": {
+      "family": "Bromeliad Family",
+      "color": "Brown"
+    },
+    "quantity_in_stock": 50
+  },
+  {
+    "name": "Mango",
+    "price": 2.0,
+    "description": "A tropical fruit with a sweet, orange flesh and a large pit.",
+    "categories": {
+      "family": "Cashew Family",
+      "color": "Orange"
+    },
+    "quantity_in_stock": 80
+  },
+  {
+    "name": "Tangerine",
+    "price": 1.0,
+    "description": "A small, sweet citrus fruit with a loose, easy-to-peel skin.",
+    "categories": {
+      "family": "Citrus Family",
+      "color": "Orange"
+    },
+    "quantity_in_stock": 120
+  },
+  {
+    "name": "Blueberries",
+    "price": 4.0,
+    "description": "Small, round berries with a sweet and slightly tart flavor.",
+    "categories": {
+      "family": "Heath Family",
+      "color": "Blue"
+    },
+    "quantity_in_stock": 200
+  },
+  {
+    "name": "Tomato",
+    "price": 1.0,
+    "description": "A red or yellowish fruit with a juicy interior, often used as a vegetable.",
+    "categories": {
+      "family": "Nightshade Family",
+      "color": "Red"
+    },
+    "quantity_in_stock": 100
+  },
+  {
+    "name": "Watermelon",
+    "price": 5.0,
+    "description": "A large fruit with a hard green rind and sweet, juicy red flesh.",
+    "categories": {
+      "family": "Gourd Family",
+      "color": "Green"
+    },
+    "quantity_in_stock": 30
+  },
+  {
+    "name": "Cherries",
+    "price": 6.0,
+    "description": "Small, round stone fruits with a sweet or tart flavor.",
+    "categories": {
+      "family": "Rose Family",
+      "color": "Red"
+    },
+    "quantity_in_stock": 70
+  },
+  {
+    "name": "Grapes",
+    "price": 2.5,
+    "description": "Small, round fruits that grow in clusters and can be sweet or tart.",
+    "categories": {
+      "family": "Vine Family",
+      "color": "Purple"
+    },
+    "quantity_in_stock": 140
+  },
+  {
+    "name": "Apple",
+    "price": 1.2,
+    "description": "A sweet or tart fruit with a crisp flesh and various skin colors.",
+    "categories": {
+      "family": "Rose Family",
+      "color": "Red"
+    },
+    "quantity_in_stock": 110
+  },
+  {
+    "name": "Pear",
+    "price": 1.3,
+    "description": "A sweet fruit with a soft, grainy texture and a green or yellow skin.",
+    "categories": {
+      "family": "Rose Family",
+      "color": "Green"
+    },
+    "quantity_in_stock": 90
+  },
+  {
+    "name": "Avocado",
+    "price": 1.8,
+    "description": "A creamy fruit with a large seed and a green, pebbly skin.",
+    "categories": {
+      "family": "Laurel Family",
+      "color": "Green"
+    },
+    "quantity_in_stock": 60
+  },
+  {
+    "name": "Melon",
+    "price": 3.5,
+    "description": "A large, juicy fruit with a sweet flesh and a hard rind.",
+    "categories": {
+      "family": "Gourd Family",
+      "color": "Yellow"
+    },
+    "quantity_in_stock": 40
+  },
+  {
+    "name": "Lemon",
+    "price": 1.0,
+    "description": "A yellow citrus fruit with a tart flavor, often used for its juice.",
+    "categories": {
+      "family": "Citrus Family",
+      "color": "Yellow"
+    },
+    "quantity_in_stock": 130
+  },
+  {
+    "name": "Banana",
+    "price": 1.0,
+    "description": "A long, curved fruit with a soft, sweet flesh and a yellow peel.",
+    "categories": {
+      "family": "Banana Family",
+      "color": "Yellow"
+    },
+    "quantity_in_stock": 180
+  },
+  {
+    "name": "Strawberry",
+    "price": 3.0,
+    "description": "A sweet, red fruit with a juicy texture and small seeds on the surface.",
+    "categories": {
+      "family": "Rose Family",
+      "color": "Red"
+    },
+    "quantity_in_stock": 160
+  },
+  {
+    "name": "Kiwi",
+    "price": 1.1,
+    "description": "A small, brown fruit with a bright green, tangy flesh.",
+    "categories": {
+      "family": "Actinidia Family",
+      "color": "Green"
+    },
+    "quantity_in_stock": 90
+  },
+  {
+    "name": "Eggplant",
+    "price": 1.5,
+    "description": "A dark purple fruit with a spongy flesh, commonly used as a vegetable in cooking.",
+    "categories": {
+      "family": "Nightshade Family",
+      "color": "Purple"
+    },
+    "quantity_in_stock": 70
+  },
+  {
+    "name": "Coconut",
+    "price": 3.0,
+    "description": "A tropical fruit with a hard, fibrous shell and sweet, milky interior.",
+    "categories": {
+      "family": "Palm Family",
+      "color": "Brown"
+    },
+    "quantity_in_stock": 50
+  }
+]
