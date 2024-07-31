@@ -20,9 +20,6 @@ export default function Hero() {
         </Link>
       </div>
       <div className='max-w-screen-lg w-full mx-auto px-4 grid grid-cols-3 gap-3'>
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
       </div>
     </section>
   )
