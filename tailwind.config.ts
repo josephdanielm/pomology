@@ -6,5 +6,10 @@ export default {
     fontFamily: {},
     extend: {}
   },
-  plugins: []
+  plugins: [],
+  safelist: [
+    {
+      pattern: /border-.+/,
+    }
+  ]
 }
