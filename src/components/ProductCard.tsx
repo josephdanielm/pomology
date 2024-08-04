@@ -1,6 +1,10 @@
+import { useShoppingCart } from '../context/ShoppingCartContext'
 import { ProductCardProps } from '../types'
 
 export default function ProductCard({ product, imageSrc }: ProductCardProps) {
+  const {getItemQuantity, increaseCartQuantity, decreaseCartQuantity, removeFromCart} = useShoppingCart();
+  const quantity =  getItemQuantity(product.name)
+
   const colorVariants: any = {
     blue: 'bg-blue-200 border-blue-300',
     red: 'bg-red-200 border-red-300',
@@ -29,7 +33,7 @@ export default function ProductCard({ product, imageSrc }: ProductCardProps) {
           <p className='text-xl font-bold'>${product.price.toFixed(2)}</p>
         </div>
         <p className='text-md font-medium text-gray-600 leading-normal mb-4'>{product.description}</p>
-          <button className='group w-fit self-end mt-auto gap-x-1 flex items-center justify-center px-4 pr-2 py-2 text-base font-medium text-center bg-gray-100 text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-200 active:bg-gray-300 transition-all duration-300 ease-in-out'>
+          <button onClick={() => increaseCartQuantity(product.name)} className='group w-fit self-end mt-auto gap-x-1 flex items-center justify-center px-4 pr-2 py-2 text-base font-medium text-center bg-gray-100 text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-200 active:bg-gray-300 transition-all duration-300 ease-in-out'>
           Add to Bag
             <svg
               className='mb-1 fill-gray-600 group-hover:fill-gray-700 transition-all duration-300 ease-in-out'

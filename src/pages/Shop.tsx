@@ -1,12 +1,10 @@
 import ProductCard from '../components/ProductCard'
 import { useOutletContext } from "react-router-dom";
 import { ContextType } from '../types';
-import getImage from '../utils/getImage';
-import { useEffect, useState } from 'react';
+
 
 export default function Shop() {
   const {products, isLoading, error, images} = useOutletContext<ContextType>()
-
 
   if (isLoading) { return <div>Loading...</div>}
 
