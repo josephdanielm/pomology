@@ -31,7 +31,7 @@ export function ShoppingCart({isOpen}: ShoppingCartProps) {
             </div>
             <div className="w-fit mt-4">
                 <Link to='/checkout'>
-                    <button className='flex items-center w-fit justify-center px-4 py-2 text-base font-medium text-center bg-gray-100 text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-200 active:bg-gray-300 transition-all duration-300 ease-in-out' onClick={closeCart}>
+                    <button className='flex items-center w-fit justify-center px-4 py-2 text-base font-medium text-center bg-gray-100 text-gray-900 border border-gray-300 rounded hover:bg-gray-200 active:bg-gray-300 transition-all duration-300 ease-in-out' onClick={closeCart}>
                         <p>Checkout</p>
                     </button>
                 </Link>

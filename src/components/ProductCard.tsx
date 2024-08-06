@@ -20,12 +20,12 @@ export default function ProductCard({ product, imageSrc }: ProductCardProps) {
 
   return (
     <div
-      className={`flex flex-col text-gray-800 bg-clip-border w-full rounded-2xl py-4 px-4 gap-y-4 bg-gray-50 border-2 border-gray-200 shadow-lg`}
+      className={`flex flex-col text-gray-800 bg-clip-border w-full rounded bg-white shadow-md`}
     >
-      <div className={`border-2 w-full rounded-xl flex justify-center py-2 ${colorVariants[productColor]}`}>
+      <div className={`border w-full rounded-tl rounded-tr flex justify-center py-2 ${colorVariants[productColor]}`}>
         <img src={imageSrc} className='max-w-16 sm:pb-6 lg:py-8  self-center py-4' alt={product.name} />
       </div>
-      <div className='flex flex-col grow gap-y-2'>
+      <div className='flex flex-col grow gap-y-2 px-4 rounded-br rounded-bl py-4 border-l border-r border-b border-gray-200'>
         <div className='flex justify-between items-start'>
           <span className='flex flex-col'>
             <h2 className='text-xl leading-6 font-semibold text-start'>{product.name}</h2>
@@ -34,9 +34,9 @@ export default function ProductCard({ product, imageSrc }: ProductCardProps) {
           <p className='text-lg font-semibold'>${product.price.toFixed(2)}</p>
         </div>
         <p className='text-md font-medium text-gray-600 leading-normal mb-4'>{product.description}</p>
-        <div className='flex min-h-14 justify-end'>
+        <div className='flex grow min-h-14 justify-end'>
         {quantity === 0 && (
-          <button onClick={() => increaseCartQuantity(product.name)} className='group w-fit self-center gap-x-1 flex items-center justify-center px-4 pr-2 py-2 text-base font-medium text-center bg-gray-100 text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-200 active:bg-gray-300 transition-all duration-300 ease-in-out'>
+          <button onClick={() => increaseCartQuantity(product.name)} className='group w-fit mt-auto self-center gap-x-1 flex items-center justify-center px-4 pr-2 py-2 text-base font-medium text-center bg-gray-100 text-gray-900 border border-gray-300 rounded hover:bg-gray-200 active:bg-gray-300 transition-all duration-300 ease-in-out'>
           Add to Bag
 
             <svg
@@ -54,17 +54,17 @@ export default function ProductCard({ product, imageSrc }: ProductCardProps) {
           </button>
         )}
         {quantity > 0 && (
-          <div className='flex items-center w-fit '>
+          <div className='flex items-center w-fit self-end'>
             <button
               onClick={() => decreaseCartQuantity(product.name)}
-              className='flex items-center justify-center size-10 font-medium text-center bg-gray-100 text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-200 active:bg-gray-300 transition-all duration-300 ease-in-out'
+              className='flex items-center justify-center size-11 font-medium text-center bg-gray-100 text-gray-900 border border-gray-300 rounded hover:bg-gray-200 active:bg-gray-300 transition-all duration-300 ease-in-out'
             >
               -
             </button>
             <div className='font-medium text-lg px-3'>x{quantity}</div>
             <button
               onClick={() => increaseCartQuantity(product.name)}
-              className='flex items-center justify-center size-10 font-medium text-center bg-gray-100 text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-200 active:bg-gray-300 transition-all duration-300 ease-in-out'
+              className='flex items-center justify-center size-11 font-medium text-center bg-gray-100 text-gray-900 border border-gray-300 rounded hover:bg-gray-200 active:bg-gray-300 transition-all duration-300 ease-in-out'
             >
               +
             </button>
