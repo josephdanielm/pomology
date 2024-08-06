@@ -1,9 +1,13 @@
+import { useNavigate } from 'react-router-dom'
 import { useShoppingCart } from '../context/ShoppingCartContext'
 import useGetFruits from '../utils/useGetFruits'
 
 const CheckoutPage = () => {
-  const { cartItems } = useShoppingCart()
+  const { cartItems, removeFromCart } = useShoppingCart()
   const { images, products } = useGetFruits()
+
+  const navigate = useNavigate();
+  const goToHomePage = () => navigate('/');
 
   const totalCost = cartItems.reduce((total, item) => {
     const product = products.find((product) => product.name === item.name)
@@ -12,6 +16,8 @@ const CheckoutPage = () => {
 
   const handleCheckout = () => {
     alert(`Checkout successful! If this were a real store, you would be charged $${totalCost.toFixed(2)}.`)
+    cartItems.forEach((item) => removeFromCart(item.name))
+    goToHomePage()
   }
 
   return (
@@ -44,7 +50,7 @@ const CheckoutPage = () => {
       <button onClick={handleCheckout} className='flex mt-6 items-center justify-center px-4 py-2 text-base font-medium text-center bg-gray-100 text-gray-900 border border-gray-300 rounded hover:bg-gray-200 active:bg-gray-300 transition-all duration-300 ease-in-out'>
         Checkout 
       </button>
-    </div>
+    </div> 
   )
 }
 

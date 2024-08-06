@@ -3,7 +3,7 @@ import useGetFruits from '../utils/useGetFruits'
 import githubLogo from '../assets/github-mark.svg'
 
 export default function Hero() {
-  const { images, products } = useGetFruits()
+  const { images } = useGetFruits()
 
   return (
     <section className='flex flex-col max-w-screen-xl px-4 mx-auto lg:gap-8 xl:gap-0'>
@@ -16,16 +16,12 @@ export default function Hero() {
           Experience the essence of nature with Pomology.
         </p>
         <div className='flex flex-col items-center justify-center mb-4 lg:mb-8'>
-          <div className='grid gap-4 mx-auto max-w-[600px] px-4 my-2 mb-8 lg:mb-14 grid-cols-5'>
-            {products.map((product) => (
-              <>
-                {product.name === 'Pineapple' && <img src={images[product.name]!} alt={product.name} />
-                || product.name === 'Banana' && <img src={images[product.name]!} alt={product.name} />
-                || product.name === 'Blueberries' && <img src={images[product.name]!} alt={product.name} />
-                || product.name === 'Strawberry' && <img src={images[product.name]!} alt={product.name} />
-                || product.name === 'Kiwi' && <img src={images[product.name]!} alt={product.name} />}
-              </>
-            ))}
+          <div className='grid gap-4 mx-auto max-w-96 px-4 my-2 mb-8 lg:mb-14 grid-cols-5'>
+              <img src={images['Kiwi']!} alt='Kiwi' />
+              <img src={images['Banana']!} alt='Banana' />
+              <img src={images['Peach']!} alt='Peach' />
+              <img src={images['Grapes']!} alt='Grapes' />
+              <img src={images['Blueberries']!} alt='Blueberries' />   
           </div>
         </div>
         <Link
