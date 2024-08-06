@@ -15,13 +15,14 @@ const OffCanvas = ({ show, children }: OffCanvasProps) => {
       }`}
     >
       <div className="p-4">
-        <div className="flex justify-end mb-6">
-        <button
-          className='flex items-center justify-center px-2 py-1 font-medium text-center bg-gray-100 text-gray-900 border border-gray-300 rounded-md hover:bg-gray-200 active:bg-gray-300 transition-all duration-300 ease-in-out '
-          onClick={closeCart}
-        >
-          Close
-        </button>
+        <div className="flex justify-between mb-6">
+          <h2 className="text-xl font-semibold">Cart</h2>
+          <button
+            className='flex items-center justify-center px-2 py-1 font-medium text-center bg-gray-100 text-gray-900 border border-gray-300 rounded-md hover:bg-gray-200 active:bg-gray-300 transition-all duration-300 ease-in-out '
+            onClick={closeCart}
+          >
+            Close
+          </button>
         </div>
         {children}
       </div>

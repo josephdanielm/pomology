@@ -28,7 +28,7 @@ export function CartItem({ name, quantity }: CartItemProps) {
         <div className='flex flex-col align-top gap-y-2 grow'>
           <div className='flex items-center w-full'>
             <span className='font-semibold text-lg'>{name}</span>
-            <span className='font-medium ml-auto'>${(item.price * quantityOf).toFixed(2)}</span>
+            <span className='font-semibold ml-auto'>${(item.price * quantityOf).toFixed(2)}</span>
           </div>
           <div className='flex items-center'>
             <button
