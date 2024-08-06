@@ -1,5 +1,6 @@
 import { createContext, ReactNode, useContext, useState } from "react";
 import { ShoppingCart } from "../components/ShoppingCart";
+import { Link } from "react-router-dom";
 
 type ShoppingCartProviderProps = {
     children: ReactNode

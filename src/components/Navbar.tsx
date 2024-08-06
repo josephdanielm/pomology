@@ -5,14 +5,22 @@ function Navbar() {
   const {openCart, cartQuantity} = useShoppingCart()
 
   return (
-    <nav className='bg-white'>
+    <nav className=' sticky top-0 bg-white border-b-2 '>
       <div className='max-w-screen-xl flex items-center justify-between mx-auto p-4 whitespace-nowrap'>
-        <Link to='/' className='text-2xl font-bold whitespace-nowrap text-gray-800'>
+        <Link to='/' className='text-2xl font-bold whitespace-nowrap text-gray-800 group'>
           Pomology
         </Link>
         <div className='space-x-4 text-gray-800 font-semibold flex items-center'>
-          <Link to='/'>Home</Link>
-          <Link to='/shop'>Shop</Link>
+          <Link className='font-medium relative group' to='/'>
+            <span>Home</span>
+            <span className='group-hover:w-1/2 absolute -bottom-1 left-1/2 w-0 transition-all h-[2px] bg-gray-800'></span>
+            <span className='group-hover:w-1/2 absolute -bottom-1 right-1/2 w-0 transition-all h-[2px] bg-gray-800'></span>
+          </Link>
+          <Link className='font-medium relative group' to='/shop'>
+            <span>Shop</span>
+            <span className='group-hover:w-1/2 absolute -bottom-1 left-1/2 w-0 transition-all h-[2px] bg-gray-800'></span>
+            <span className='group-hover:w-1/2 absolute -bottom-1 right-1/2 w-0 transition-all h-[2px] bg-gray-800'></span>
+          </Link>
           <button onClick={openCart} className='flex items-center'>
             <svg
               className=' transition-all duration-200 ease-in-out fill-gray-700 mb-1'
